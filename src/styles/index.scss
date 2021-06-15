@@ -1,0 +1,11 @@
+$theme-colors: (
+  "navbar-color": #39BFA3,
+  "tab-color": #0EE7B9,
+  "danger":#F92510
+);
+
+@import "~bootstrap/scss/bootstrap";
+
+body{
+  padding-top: 5rem;
+}

@@ -1,0 +1,55 @@
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // background: lightgray;
+}
+.form-header{
+    display: flex;
+    justify-content: space-between;
+}
+span{
+    font-size: 20px;
+}
+.flex-box{
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    width: 50vw;
+    background: #13d8adbd;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.19)
+}
+.form-item{
+    margin: 3px;
+   justify-content: center;
+}
+.label-text{
+    width: 11vw;
+}
+input[type="text"]{
+    width: 35vw;
+}
+input[type="email"]{
+    width: 35vw;
+}
+.select-tag{
+    width: 35vw;
+}
+.action{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 0.8em;
+}
+#btn-submit{
+    background:#09AF0E;
+    color: #fff;
+    border-radius: 5px;
+    margin: 2px;
+}
+#btn-reset{
+    background: #A6A7A7;
+    color: #111;
+    border-radius: 5px;
+    margin: 2px;
+}
