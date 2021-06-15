@@ -11,9 +11,9 @@ const Tabdata = ({ele,index}) => {
                     <td>{qualification}</td>
                     <td>
                         <Link to="/editform"><span className="material-icons">edit</span></Link>
-                        <a href="">
+                        <Link to="/">
                             <span className="material-icons text-danger">remove_circle</span>
-                        </a>
+                        </Link>
                     </td>
             </tr> 
             )

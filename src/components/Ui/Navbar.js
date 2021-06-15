@@ -10,7 +10,7 @@ const Navbar = () => {
                 </Link>
                 <div>
                     <Link to="/addform" className="btn btn-light ml-auto" style={{color:"#fff"}}>
-                        Add
+                    <span class="fas fa-user-plus"></span>Add
                     </Link>
                 </div>
             </div>
