@@ -2,20 +2,23 @@ import React,{useState} from 'react'
 import Navbar from './Navbar'
 import '../../styles/form.scss'
 import { useDispatch } from 'react-redux'
-import {newStudent} from '../../store'
-
+import {newStudent} from '../../action/newStudent'
+import shortid from 'shortid'
+import { useHistory } from 'react-router'
 
 const Addform = () => {
+    //history method
+    const history=useHistory(); 
     // dispatch method
      const dispatch = useDispatch();
     // state...
     const [values,setValue]=useState({
+        id:shortid.generate(),
         name:"",
         email:"",
         qualification:"",
         date:new Date().toDateString()
-    })
-    // vaildation state
+    })    // vaildation state
     const [vaild,setVaild]=useState(false)
     
     // submit state
@@ -41,7 +44,8 @@ const Addform = () => {
             setVaild(true)
         }
         setsubmitted(true)
-        dispatch(newStudent(values))
+        dispatch(newStudent(values));
+        history.push("/")
     }
     // reset handler
     const handleReset=(event)=>{

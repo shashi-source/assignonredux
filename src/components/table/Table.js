@@ -4,7 +4,7 @@ import {useSelector} from 'react-redux'
 
 const Table = () => {
 
-    const stateData = useSelector(state => state.data)
+    const stateData = useSelector(state => state.data.data)
     console.log(stateData)
 
     return (
@@ -21,7 +21,7 @@ const Table = () => {
                     </tr>
                 </thead>
                 <tbody>
-                    {stateData.map((ele,index)=><Tabdata index={index} ele={ele}/>)}
+                    {stateData.map((ele,index)=><Tabdata index={index} ele={ele} key={ele.id}/>)}
                 </tbody>
                 </table>
             </div>
